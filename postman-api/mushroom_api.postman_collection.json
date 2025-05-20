@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "b08b06dc-10c9-4fd4-bd18-936aafbd7acc",
+		"name": "mushroom_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38221092"
+	},
+	"item": [
+		{
+			"name": "post-shop",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mushroomCode\": 0,\r\n    \"districtCode\": 9,\r\n    \"observedDailySales\": 8,\r\n    \"expectDailySalesGrowth\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4080/add_predict_shop_demand",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4080",
+					"path": [
+						"add_predict_shop_demand"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post-customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"districtCode\": 2,\r\n    \"memberCount\": 7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4080/add_predict_customer_demand",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4080",
+					"path": [
+						"add_predict_customer_demand"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-shop-aom",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4080/get_predict_shop_demand_aom",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4080",
+					"path": [
+						"get_predict_shop_demand_aom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-shop-am",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4080/get_predict_shop_demand_am",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4080",
+					"path": [
+						"get_predict_shop_demand_am"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4080/get_predict_customer_demand",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4080",
+					"path": [
+						"get_predict_customer_demand"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-shop-aom",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4080/delete_old_shop_demand_records_aom",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4080",
+					"path": [
+						"delete_old_shop_demand_records_aom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-shop-am",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4080/delete_old_shop_demand_records_am",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4080",
+					"path": [
+						"delete_old_shop_demand_records_am"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-customer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4080/delete_old_customer_demand_records",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4080",
+					"path": [
+						"delete_old_customer_demand_records"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
